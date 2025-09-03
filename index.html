@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <link href="static/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="section-wrapper">
+        <div class="lanbtn-div">
+            <div class="active-btn-div">
+                <span class="lanbtn-NL">NL</span>
+            </div>
+            <div class="inactive-btn-div">
+                <span class="lanbtn-EN">EN</span>
+            </div>
+        </div>
+        <div class="title">
+            <h1>Over mij</h1>
+        </div>
+        <section class="stage a" id="stage-1">
+            <div class="me-img-div"> 
+                <img class="me-img" src="static/images/me.jpg">
+            </div>
+            <div class="about-me-div">
+                <h1 class="me-header">Wie ben ik?</h1>
+                <p class="me-paragraph">
+                    Ik ben Nordin, een 22 jarige zelf aangeleerd programmeur met zo'n 2,5 á 3 jaar aan ervaring.<br>
+                    Over de laatste jaren heb ik CS50x afgemaakt, een paar kleine projectjes gebouwd en heb<Br>
+                    ik mijn eerste grote project, Discount Checker gemaakt. Ik heb dit allemaal gedaan<br>
+                    in mijn vrije tijd terwijl ik part-time werkte, grotendeels als schoonmaker
+                </p>
+                    
+                <h1 class="me-header">Waarom ik begon met programmeren</h1>
+                <p class="me-paragraph">
+                    Ik ben altijd al geïnteresseerd geweest in tech, maar ik had nooit de tijd genomen om me er in te verdiepen, <br>
+                    totdat ik ontslag nam van mijn baan als bedrijfsadministrateur. Ik voelde dat ik vast zat in dat werk en ik wilde iets vinden<br>
+                    waar ik voor altijd zou kunnen leren en groeien. Door die keuze ben ik gaan programmeren, waardoor ik een passie vond<br>
+                    waar ik niet eerder van afwist. In deze tijd ben ik gaan houden van systeem architectuur, het oplossen van complexe problemen,<br>
+                    het schrijven van goede, onderhoudbare code en het opbouwen van applicaties.                    
+                </p>
+
+                <h1 class="me-header">Mijn favoriete stack</h1>
+                <p class="me-paragraph">
+                    Mijn favoriete stack is de backend. Ik hou er niet alleen van om het werkend te krijgen, maar vooral van het ontwerpen ervan:<br>
+                    nadenken over trade-offs, edge cases, mogelijke faalpunten en het schrijven van modulaire, goed gestructureerde code<br>
+                    die makkelijk te onderhouden en te updaten is. Zelfs in een stack die ik iets minder leuk vind, zoals de frontend,<br>
+                    hou ik kwaliteit als hoogste prioriteit. Ik wil dat de user experience soepel, prettig en duidelijk is.<br>
+                    Een goede backend verdient tenslotte ook een goede frontend.<br>
+                </p>
+            </div>
+        </section>
+
+        <section class="stage b" id="stage-2">
+
+            <div>
+                <div class="project-div">
+                    <H1 class="project-header" id="title-header">Discount Checker</H1>
+                    <p class="project-paragraph">
+                        Discount Checker in een project dat ik oorspronkelijk had gemaakt voor mijn CS50x eindproject.<br>
+                        De eerste versie was heel simpel, kon alleen op localhost runnen en was meer een proof of concept.<br>
+                        Wat het nu is geworden, is een full-stack, productie kwaliteit project compleet door mij gemaakt.
+                    </p>
+
+                    
+                    <h1 class="project-header">Wat doet Discount Checker?</h1>
+                    <p class="project-paragraph" id="border-p">
+                        Het doel van Discount Checker is om alle producten die jij wilt van verschillende webshops<br>
+                        op één plek bij elkaar te brengen. Je hoeft niet meer 5 verschillende websites the checken om te zien<br>
+                        of een product in de aanbieding is, je kunt gewoon naar één website gaan en alles op één plek zien.
+                    </p>
+                </div>
+            </div>
+
+            <div class="website-image-div">
+                <img class="website-img" src="static/images/website-2.png">
+            </div>
+
+            <div class="project-div-2">
+                <div class="try-out-div">
+                    <h1 class="project-header-2" id="try-out-header">
+                        Wil je Discount Checker uitproberen?
+                    </h1>
+                    <p class="project-paragraph-2">
+                        Maak een account, log in, vul de tekstbox in met een product-URL van een ondersteunde webshop en klik op check!
+                    </p>
+
+                    <a target="_blank" href="https://nordinsprojects.site/discount-checker/">
+                        <button class="demo-button">Live Demo</button>
+                    </a>
+                </div>
+                <div class="how-div">
+                    <h1 class="project-header-2">Hoe is het gemaakt?</h1>
+                    <p class="project-paragraph-2">
+                        Discount Checker is een web applicatie gebouwd in Python met tools zoals Flask voor de backend, SQLAlchemy als ORM,<br>
+                        Celery/RedisMQ voor rate limiting en task scheduling. Het is gedeployed met Docker, nginx en waitress.
+                        Het gebruikt een zelfgebouwde web scraping API in FastAPI, <Br>
+                        met Playwright voor de headless browser, een rotating residential proxy tegen botdetectie en nginx + gunicorn voor de deployment.
+                    </p>
+                        
+                </div>
+                <div class="repo-div">
+                    <div class="repo-button-div">
+                        <div class="git-div">
+                            <h1>Flask app</h1>
+                            <a target="_blank" href="https://github.com/NordinCoding/discountChecker">
+                                <button class="git-button"><img class="git-logo" src="static/images/github.png"></button>
+                            </a>
+                        </div>
+                        <div class="git-div">
+                            <h1>Web Scraper API</h1>
+                            <a target="_blank" href="https://github.com/NordinCoding/fastAPI/tree/main/fastAPI">
+                                <button class="git-button"><img class="git-logo" src="static/images/github.png"></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                
+            
+        </section>
+
+        <section class="stage c" id="stage-3">
+            <div class="title" id="stage-3-title">
+                <div class="bottom-border">
+                    <H1>Code</H1>
+                </div>
+            </div>
+            <div id="stage-3-div">
+                <div class="code-segment">
+                    <h1>standaardisatie van URLs</h1>
+                    <p class="p-3" id="standardise-text">
+                        Ik kwam er heel snel achter hoe complex het herscrapen van een product database kan zijn vanwege verschillen in gebruikersinput, maar ook<br>
+                        inconsistenties in URLs. Om dit tegen te gaan, standardiseer ik alle URLs en verwijder ik de trailing data voordat ze in de database komen.
+                    </p>
+                        
+                    <div class="code-block-div" id="standardise-div">
+                        <div>
+                            <img class="code-snippet" src="static/images/standardise_url.png">
+                        </div>
+                        <div class="drawer-div closed">
+                            <div class="explanation-div">
+                                <div>
+                                    <p id="standardise-1">
+                                        URL opschonen.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p id="standardise-2">
+                                        Bol.com URLs hebben een patroon van "/?" voor hun trailing data.<br>
+                                        Als dit patroon bestaat, gebruik ik de index van "/?" om de trailing<br> 
+                                        data eraf te slicen.
+                                    </p>
+                                </div>
+                                <div id="standardise-3-div">
+                                    <p id="standardise-3">
+                                        Ik standardiseer al de URLs zodat mijn deduplicatie logica<br> 
+                                        consistent blijft. Ik doe dit door "https://www." toe te voegen<Br>
+                                        aan URLs die dit nog niet hebben.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="expand-div">
+                                <h3>Uitleg</h3>
+                                <div class="expand-arrow-div">
+                                    <img class="expand-arrow" src="static/images/arrow.png">
+                                </div>
+                            </div>
+                            <div class="expand-div">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="index-snippet">
+                        Deze snippet is van
+                        <a class="code-href" target="_blank" href="https://github.com/NordinCoding/discountChecker/blob/main/modules/functions.py#L69">
+                            functions.py
+                        </a> 
+                        in lijn 69
+                    </h3>
+
+                    <div id="deduplication-div">
+                        <h1>Duplicaten in de Database voorkomen</h1>
+                        <p class="p-3">
+                            Er is een mogelijkheid dat meerdere gebruikers hetzelfde product in hun tabel willen hebben. Om hiermee om te gaan heb ik deduplicatie<br> 
+                            logica toegevoegd, dit versnelt niet alleen de request tijd omdat het de data direct uit de database haalt,<Br>
+                            maar het bespaart ook resources omdat de API niet geroept hoeft te worden.
+                        </p>
+
+                        <h3>The deduplicatie logica:</h3>
+                        <div class="pre-block-div">
+                            <pre class="pre-block"><samp>
+                                Is het requested product al in de products tabel van de database?
+                                    <b class="pseudo-b">if it is:</b>
+                                        Check of het product ook in de userProducts tabel bestaat voor de huidige userID
+
+                                        <b class="pseudo-b">if it is:</b>
+                                            Laat de gebruiker weten dat het product al in hun tabel zit en voeg het niet toe
+                                        <b class="pseudo-b">else:</b>
+                                            Voeg het product toe aan userProducts met de bestaande productID en userID
+                                    <b class="pseudo-b">else:</b>
+                                        Roep de API en voeg de product data toe aan de products en userProducts tabellen
+                            </samp></pre>
+                        </div>
+                        <h3 class="index-snippet">
+                            Om de code te zien, kijk naar de "/add_product" route in: 
+                            <a class="code-href" target="_blank" href="https://github.com/NordinCoding/discountChecker/blob/main/app.py#L179">
+                                app.py
+                            </a> in lijn 179
+                        </h3>
+                    </div>
+
+
+                </div>
+                <div class="code-segment-2">
+                    <div class="title">
+                        <h4>Data Flow</h4>
+                    </div>
+                    <div id="data-flow-div">
+                        <div class="data-chart-div">
+                            <div class="data-box flow-text box-width">
+                                <h3>Gebruikers input</h3>
+                            </div>
+                            <div class="flow-arrow">↓</div>
+                            <div class="data-box flow-text box-width">
+                                <h3>Web Server Backend Validatie</h3>
+                            </div>
+                            <div class="flow-arrow">↓</div>
+                            <div class="data-box flow-text box-width">
+                                <h3>API Request</h3>
+                            </div>
+                            <div class="flow-arrow">↓</div>
+                            <div class="data-box flow-text box-width">
+                                <h3>Celery Task Queue</h3>
+                            </div>
+                            <div class="flow-arrow">↓</div>
+                            <div class="data-box flow-text box-width">
+                                <h3>API Response</h3>
+                            </div>
+
+                            <div class="horizontal-flow">
+                                <div class="vertical-flow">
+                                    <div class="flow-arrow">↓</div>
+                                    <div class="data-box flow-text extra-box-width">
+                                        <h3>Opslaan in Database</h3>
+                                    </div>
+                                </div>
+                                <div class="vertical-flow">
+                                    <div class="flow-arrow">↓</div>
+                                    <div class="data-box flow-text extra-box-width">
+                                        <h3>Front-end Table Display</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="data-chart-div-2">
+                            <div class="data-box box-width-2">
+                                <p class="flow-text ">Input in de vorm van een URL</p>
+                            </div>
+                            <div class="flow-arrow-2">↓</div>
+                            <div class="data-box box-width-2">
+                                <p class="flow-text ">
+                                    Backend checkt of de URL van een ondersteunde<br> 
+                                    website is
+                                </p>
+                            </div>
+                            <div class="flow-arrow-2">↓</div>
+                            <div class="data-box box-width-2">
+                                <p class="flow-text ">
+                                    Web server roept de request_API( ) Celery task
+                                </p>
+                            </div>
+                            <div class="flow-arrow-2">↓</div>
+                            <div class="data-box box-width-2">
+                                <p class="flow-text ">
+                                    Request gaat de Queue in met een concurrency van 1<br>
+                                    om de server niet te overbelasten
+                                </p>
+
+                            </div>
+                            <div class="flow-arrow-2">↓</div>
+                            <div class="data-box box-width-2">
+                                <p class="flow-text ">
+                                    Web Server ontvangt de product data van de <Br>
+                                    API In de vorm van een dictionary
+                                </p>
+                            </div>
+                            <div class="horizontal-flow">
+                                <div class="vertical-flow">
+                                    <div class="flow-arrow-2">↓</div>
+                                    <div class="data-box extra-box-width-2">
+                                        <p class="flow-text">
+                                            Product data wordt opgeslagen in de products en userProducts tabellen
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="vertical-flow">
+                                    <div class="flow-arrow-2">↓</div>
+                                    <div class="data-box extra-box-width-2">
+                                        <p class="flow-text">
+                                            Frontend krijgt de product data van de backend en toont het aan de gebruiker
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+                <div class="break-border">
+                    <div class="border-break">
+                </div>
+            </div>
+            <div class="stage-3-5">
+                <div class="js-segment">
+                    <h1>Handelen van een lege product tabel</h1>
+                    <p class="p-3">Ik vond dat de product tabel er niet goed uit zag wanneer hij leeg was, dus besloot ik een bericht toe te voegen als hij leeg is.</p>
+                    <div class="empty-table-img-div">
+                        <div class="table-img-div">
+                            <img id="empty-table-img-1" src="static/images/empty_table_2.png">
+                            <h3 class="index-snippet">
+                                Deze snippet is van
+                                <a class="code-href" target="_blank" href="https://github.com/NordinCoding/discountChecker/blob/main/templates/index.html#L142">
+                                    index.html
+                                </a> 
+                                in lijn 142
+                            </h3>
+                            <p class="p-3 empty-table-p">
+                                Deze functie checkt for een lege tabel op page load.<Br>
+                                checkRows is een simpele functie die check voor de <br>
+                                hoeveelheid aan rijen in het tabel van de gebruiker.
+                            </p>
+                            <p class="p-3 empty-table-p">
+                                Als de hoeveelheid aan rijen 0 is,<br>
+                                creert de <b>emptyTableMessage( )</b> functie een nieuwe rij<br>
+                                voor het tabel en toont hij een simpel bericht met<br>
+                                instructies over hoe je een product kan toevoegen.
+                            </p>
+                            <p class="p-3 empty-table-p">
+                                Wanneer een product verwijdert is, gebeurt hetzelfde process,<br>
+                                hij checkt voor de hoeveelheid aan rijen en als dat<br>
+                                0 is, voegt hij de "Empty Table Message" toe
+                            </p>
+
+                        </div>
+                        <div class="table-img-div">
+                            <img id="empty-table-img-2" src="static/images/empty_table.png">
+                            <h3 class="index-snippet">
+                                Deze snippet is van
+                                <a class="code-href" target="_blank" href="https://github.com/NordinCoding/discountChecker/blob/main/static/js/main.js#L165">
+                                    main.js
+                                </a> 
+                                in lijn 165
+                            </h3>
+                        </div>
+                    </div>
+                    <h1>Het handelen van real-time gebruikers input</h1>
+                    <div class="user-input-text">
+                        <p class="p-3">
+                            Het alleen sturen van geldige URLs naar mijn API is heel belangrijk,
+                            niet alleen om crashes te voorkomen maar ook om onnodige kosten te besparen.
+                            Om dit te doen check ik heel simpel of de domein naam van een ondersteunde website
+                            in de requested URL zit, zo wel dan stuur ik hem naar de API, zo niet 
+                            geef ik de gebruiker een duidelijk feedback bericht met de vraag
+                            voor een geldige URL.
+                        </p>
+                    </div>
+                    <div class="user-input-div">
+                        <div>
+                            <div class="feedback-image-div">
+                                <img class="feedback-image" src="static/images/feedback.png">
+                                    <h3 class="index-snippet">
+                                        Deze snippet is van
+                                        <a class="code-href" target="_blank" 
+                                            href="https://github.com/NordinCoding/discountChecker/blob/main/templates/index.html#L98">
+                                            index.html
+                                        </a> 
+                                        in lijn 98
+                                    </h3>
+                            </div>
+                            <div class="user-input-text-2">
+                                <p class="p-3">
+                                    Persoonlijk geloof ik dat het heel belangrijk is om duidelijke feedback te geven aan gebruikers voor een goede user experience.
+                                    Om dit te voorzien heb ik een feedback bericht systeem die gebruikers feedback geeft gebaseerd op de situatie.
+                                </p>
+                                <p class="p-3">
+                                    Bijvoorbeeld tijdens een user request zet ik de "submit" button uit, laat ik een loading spinner zien
+                                    en de text "Getting product data...". Nadat de request over is krijgen ze feedback of de request successvol
+                                    was of niet en word de "submit" button weer aangezet.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="fadeout-image-div">
+                            <div>
+                                <img class="fadeout-image" src="static/images/fade_out.png">
+                                    <h3 class="index-snippet">
+                                        Deze snippet is van
+                                        <a class="code-href" target="_blank" 
+                                            href="https://github.com/NordinCoding/discountChecker/blob/main/static/js/main.js#L24">
+                                            main.js
+                                        </a> 
+                                        in lijn 24
+                                    </h3>
+                            </div>
+                            <div class="fadeout-text-div">
+                                <p class="p-3 fadeout-p">
+                                    Nadat het feedback bericht op de frontend staat, wordt de <b>fadeOut( )</b> functie geroepen
+                                </p>
+
+                                <p class="p-3 fadeout-p">
+                                    Deze functie neemt de div van het feedback bericht(messageDiv) en de <br>submit button(submitButton) als argumenten
+                                </p>
+
+                                <p class="p-3 fadeout-p">
+                                    Als deze functie geroepen is, zet hij meteen de submit button uit om spam misbruik te voorkomen, wacht hij 3 seconden door setTimeout,
+                                    zet hij opacity naar 0 zodat het weg vaagt, wacht hij nog 1 seconden, verwijdert hij de content van de messageDiv en zet hij de
+                                    button weer aan zodat de gebruiker hun volgende request kan maken.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="webscraper-segment">
+                    <div class="title-scraping">
+                        <h1>Web Scrapen</h1>
+                        <p>
+                            Oorspronkelijk gebruikte ik BeautifulSoup4 voor de CS50x versie van Discount Checker.
+                            BS4 is heel goed voor statische content scrapen, maar ik liep heel snel tegen een probleem
+                            aan toen ik dit project ging verbeteren. Wanneer de cookies pop up verscheen,
+                            blokkeerde het de HTML van de pagina met een JS script. Om dit probleem op te lossen
+                            had ik wat onderzoek gedaan en kwam ik erachter wat een "headless browser" is,
+                            degene die ik vond waren Playwright en Selenium. Ik heb playwright gekozen omdat
+                            het moderner is, asynchronous is en het heeft geweldige documentatie.
+                        </p>
+                    </div>
+
+
+                    <h1>Bol.com Scrapen</h1>
+                    <div class="bot-detection-div">
+                        <h3>Bot detection</h3>
+                            <p class="p-3">
+                                Bol.com heeft consistente en hele schone HTML, dit maakte het scrapen van de website
+                                in development heel makkelijk. Maar toen ik het op mijn VPS probeerde stopte het meteen
+                                met werken vanwege bot detectie, dit leidde naar een strijd tegen de bot detectie 
+                                die 3 weken duurde waar ik verschillende browsers, verschillende browser argumenten, random pauzes
+                                om een gebruiker te imiteren en residential proxies heb geprobeerd.
+                            </p>
+                            <p class="p-3">
+                                Wat uiteindelijk werkte was een combinatie van deze technieken. Ik had een open source
+                                community gemaakte upgrade van Playwright gevonden die Patchright heette en deze hielp
+                                heel goed tegen bot detectie, maar dat was niet genoeg, wat uiteindelijk voor betrouwbaarheid
+                                zorgde, was een rotating residential proxy van Oxylabs. De combinatie van Patchright, browser argumenten,
+                                random pauzes en de proxies maakte de scraper heel stabiel en betrouwbaar.
+                            </p>
+                    </div>
+                    <div class="product-data-div">
+                        <h3>Productdata verzamelen</h3>
+                            <p class="p-3">
+                                Wanneer het neerkomt op het ophalen van de productdata is het heel makkelijk dankzij de schone en consistente HTML van Bol.com.<br>
+                            </p>
+                                
+                            <div class="bol-img-div">
+                                <div class="table-img-div">
+                                    <img class="bol-img1" src="static/images/bol_scraper1.png">
+                                    <h3 class="index-snippet">
+                                        Deze snippet is van
+                                        <a class="code-href" target="_blank" 
+                                            href="https://github.com/NordinCoding/fastAPI/blob/main/fastAPI/mainPlay.py#L117">
+                                            mainPlay.py
+                                        </a> 
+                                        in lijn 117
+                                    </h3>
+                                </div>
+                                <div class="table-img-div">
+                                    <img class="bol-img2" src="static/images/bolprice.png">
+                                    <h3 class="index-snippet">
+                                        Bol.com prijzen
+                                    </h3>
+                                </div>
+                            </div>
+                            <p class="p-3">
+                                Bijvoorbeeld in deze code snippet, check ik of het "original price" element bestaat (<b>"h-nowrap"</b>),
+                                als deze niet bestaat dan betekent het dat het niet in de uitverkoop is en zet
+                                ik beide prijzen naar de standaard prijs die gevonden is. Maar, als de "original price" wel
+                                bestaat betekent het dat het product wel in de uitverkoop is en 2 prijs waarden heeft,
+                                de "original price" en de "current price" (<b>zie foto voor voorbeeld</b>). 
+                                Om de "original price" te vinden, gebruik ik dezelfde class die ik eerder gebruikte om te checken
+                                of het element bestaat, ik pak dan de inner HTML, schoon ik de data op en return ik de data.
+                            </p>
+
+                            <p class="p-3">
+                                De cookies accept en taal selectie pop up die Bol.com gebruikt krijgt de scraper niet altijd te zien
+                                omdat de scraper session data opslaat. Dit maakt de scraper een klein beetje sneller omdat hij niet hoeft
+                                te wachten op de pop up en niet op de knoppen hoeft te klikken. Maar, als de scraper een error krijgt
+                                verwijdert hij altijd de session data om veilig te zijn.
+                            </p>
+
+                    </div>
+                    <div class="mediamarkt-div">
+                        <h1>
+                            Mediamarkt Scrapen
+                        </h1>
+                        <p class="p-3">
+                            Mediamarkt scrapen was compleet anders. De uitdaging was niet de bot detectie, maar het scrapen van de
+                            content vanwege de HTML van Mediamarkt.
+                        </p>
+
+                        <p class="p-3">
+                            Ik gebruik dezelfde anti bot detectie techniek die ik voor Bol.com gebruik en dat werkt perfect.
+                            Ik kwam er alleen heel snel achter hoe slordig de HTML van Mediamarkt is, ze gebruiken
+                            willekeurige class namen die geen betekenis hebben, vaak veranderen en soms meer dan 10 keer 
+                            gebruikt wordt op een pagina, hierdoor zijn deze classes niet goed om te gebruiken voor een
+                            stabiele scraper.
+                        </p>
+
+                        <p class="p-3">
+                            Mijn scraper bleef telkens kapot gaan door deze class namen, hierdoor begon ik met zoeken
+                            naar een betere strategie. Na een beetje zoeken en testen vond ik de "data-test" attribuut,
+                            de waarde van "data-test" wordt gebruikt in de parent element van de prijs element, veranderd nooit en
+                            wordt slechts 1 keer per pagina gebruikt wat het een perfecte attribuut maakt om mee te scrapen
+                        </p>
+
+                        <h3>De "Original Price" pakken</h3>
+                        <div class="mediamarkt-scraper-div">
+                            <div class="mediamarkt-img1-div">
+                                <img class="mediamarkt-img1" src="static/images/mediamarkt_scraper1.png">
+                                <h3 class="index-snippet">
+                                    Deze snippet is van
+                                    <a class="code-href" target="_blank" 
+                                        href="https://github.com/NordinCoding/fastAPI/blob/main/fastAPI/mainPlay.py#L465">
+                                        mainPlay.py
+                                    </a> 
+                                    in lijn 465
+                                </h3>
+                            </div>
+                            <div class="mediamarkt-text-div">
+                                <p class="p-3 mediamarkt-p">
+                                    Dit voorbeeld laat zien hoe ik de "Original Price" pak, zoals je kan zien is het veel anders dan bij Bol.com.
+                                    Het eerste gedeelte is hetzelfde, ik check of het "Original Price" element bestaat, zo niet dan zet ik hem naar de waarde van "Current Price".
+                                </p>
+
+                                <p class="p-3 mediamarkt-p">
+                                    Om de content van de "Original Price" element te krijgen moet ik eerst al de content van parent element krijgen met de data-test waarde.
+                                    Ik gebruik een simpele loop om door alle content te zoeken voor een element die <b>"€"</b> in de HTML heeft, zodra ik die gevonden heb
+                                    strip ik de whitespace en sla ik hem op in de ogPrice_html variable.
+                                </p>
+
+                                <p class="p-3 mediamarkt-p">
+                                    Wanneer de prijs gevonden is, moet hij schoongemaakt worden voordat hij naar mijn Flask app gestuurd wordt, om dit te doen gebruik ik regex.
+                                    De split method wordt gebruikt omdat het p element met de data-test waarde de prijs 2 keer geeft, dus split ik de content en pak
+                                    ik de laatste index in de lijst omdat deze correct geformat is.
+                                </p>
+
+                            </div>
+                        </div>
+                        <p class="p-3 mediamarkt-p">
+                            Bijvoorbeeld, een product met de "Original Price" van <b>"1099,–"</b>, geeft mij de waarde <b>"€1099.€1099.00"</b>.
+                            Als ik deze waarde split, en de -1 index van pak, hou ik de waarde <b>"1099.00"</b> over die perfect is voor mijn Flask app.
+                        </p>
+                    </div>
+                </div>
+                <div class="break-border2">
+                    <div class="border-break2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stage d" id="stage-4">
+            <div class="title" id="stage-4-title">
+                <div class="bottom-border-4">
+                    <H1>Systeem</H1>
+                </div>
+            </div>
+            
+            <div class="stage-4-flexbox">
+                <div class="stage-4-left">
+                    <div class="separation-div">
+                        <h1>Separation of concerns tussen Flask app en API</h1>
+                        <p class="p-3 p-system">
+                            Mijn project gebruikt 2 servers, beide servers zijn shared VPS instances. De server die mijn Flask app host is heel licht en heeft maar 2 vCPU cores vanwege de lage resource vereisten. De andere server wordt puur gebruikt voor de API en 
+                            heeft 6 vCPU cores, dit is het minimale wat nodig is om een user request en een scheduled request tegelijkertijd te behandelen.
+                        </p>
+
+                        <p class="p-3 p-system">
+                            Ik hou de Flask app en API los van elkaar omdat dit resource management makkelijker maakt, beide environments makkelijker zijn om te onderhouden en het zorgt voor minder dependencies. 
+                            Ze los van elkaar houden maakt ook debuggen makkelijker en ze kunnen elkaar niet vertragen.
+                        </p>
+                    </div>
+
+                    <div class="api-div">
+                        <h1>Dual API Setup</h1>
+                        <p class="p-3 p-system">
+                            Toen ik de webscraper API net had gebouwd was er maar één request type, user requests, dit werkte perfect op een singulaire API. Wanneer ik de scheduled rescrape had geïmplementeerd en een scheduled request stuurde naar
+                            deze singulaire API terwijl er al een user requests behandeld werd kwam ik meteen een probleem tegen, ik kreeg de error 'no browser instance'.
+                        </p>
+
+                        <p class="p-3 p-system">
+                            Na wat onderzoek en testen kwam ik erachter dat omdat de API al bezig was met een request, kon hij niet nog een browser instance opstarten. Om dit probleem op te lossen heb ik een identieke kopie gemaakt van de API
+                            en deze parallel gezet van de eerste API, deze APIs heb ik user_scraper en scheduled_scraper genoemd. Door deze dual API setup worden user requests en scheduled requests op dezelfde server behandeld, maar op verschillende APIs
+                            waardoor ze elkaar niet kunnen storen.
+                        </p>
+
+                        <p class="p-3 p-system-green">
+                            Sinds het designed van dit systeem heb ik geleerd wat browser pools zijn in Playwright, maar ik geloof nogsteeds dat deze dual API setup heel veel voordelen heeft. De separation of concerns blijft altijd fijn en ik hou meer controle over de
+                            individuele APIs. Al zou ik browser pools implementeren kan ik meer controle hebben over hoeveel browser instances elke API kan hebben.
+                            <br><br>
+                            Bijvoorbeeld, de scheduled rescrape hoeft niet super snel te gaan omdat gebruikers niet zien dat hij runned. Dus met een grote user base kan ik de user_scraper API 5 browsers geven en de scheduled_scraper 3 browsers, deze controle
+                            zou niet zo soepel zijn als ik alles op 1 API zou behandelen.
+                        </p>
+
+                    </div>
+
+                    <div class="retry-div">
+                        <h1>User request vs Scheduled Request</h1>
+                        <p class="p-3 p-system">
+                            Beide request types worden anders behandeld. User requests zijn heel onvoorspelbaar, om hiermee om te gaan valideer en schoon ik de user input op (zoals uitgelegd in de Code sectie), de gebruiker verwacht feedback dus de Flask backend
+                            moet errors opvangen en daarop reageren. Scheduled requests zijn een stuk anders, vanaf het begin is de data al schoon en direct uit de database dus ik hoef niks te doen voor de requests, maar mijn scheduled rescrape systeem
+                            heeft "retry logic".
+                        </p>
+
+                        <div class="retry-img-div">
+                            <div>
+                                <img class="retry-img" src="static/images/retry.png">
+                                <h3 class="index-snippet">
+                                    Deze snippet is van
+                                    <a class="code-href-stage4" target="_blank" 
+                                        href="https://github.com/NordinCoding/discountChecker/blob/main/modules/functions.py#L145">
+                                        functions.py
+                                    </a> 
+                                    in lijn 145
+                                </h3>
+                            </div>
+                            <div class="retry-img-p-div">
+                                <p class="p-3 p-system-green">
+                                    Deze functie wordt geroepen wanneer de eerste rescrape faalt, wat leidt tot nog 2 pogingen voordat hij het logged, de error returned en het product overslaat.
+                                </p>
+
+                                <p class="p-3 p-system-green">
+                                    Wanneer ik dit zie gebeuren in de logs, scrape ik het product altijd handmatig om te kijken wat er fout was gegaan, hierdoor heb ik best veel edge cases gevonden zoals onbeschikbare producten herkennen.
+                                </p>
+
+
+                            </div>
+                        </div>
+                        <p class="log-snippet">
+                            <code>
+                                2025-08-26 03:03:06 - INFO - User ID: None - Requesting rescrape of product: 32<br>
+                                2025-08-26 03:03:22 - ERROR - User ID: None - Requested rescrape failed, retrying: {'error': 'Failed to scrape product data/alter product data', 'details': 'Page.wait_for_selector: Timeout 10000ms exceeded.\nCall log:\n  - waiting for locator(".bPkjPs") to be visible\n'}<br><br>
+                                2025-08-26 03:03:22 - INFO - User ID: None - 1st retry on product: 32<br>
+                                2025-08-26 03:03:22 - INFO - User ID: None - Requesting rescrape of product: 32<br>
+                                2025-08-26 03:03:39 - INFO - User ID: None - Requested product successfully rescraped: {'name': 'MSI MAG 271QPX QD-OLED E2 - 27 inch - 2560 x 1440 (Quad HD) - 0.03 ms - 240 Hz', 'currentPrice': '559.00', 'ogPrice': '699.00'}<br>
+                            </code>
+                        </p>
+                        <p class="p-3 p-system-green">
+                            Deze snippet is direct uit mijn logs, de rescrape was gefaald omdat hij te lang moest wachten voordat class '<b>.bPkjPs</b>' zichtbaar was, deze class gebruik ik om te zien of de pagina geladen is omdat deze class 10+ keer gebruikt wordt
+                            op elke Mediamarkt product pagina. Hierdoor kan ik er vanuit gaan dat de pagina er te lang over duurde om te laden waardoor mijn scrapen een timeout error returnde, en op de eerstvolgende poging returnde hij successvol de product data
+                            wat betekent dat het 100% een connectie error was en geen code error.
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="stage-4-right">
+                    <div class="video-div">
+                        <h1>API in actie</h1>
+                        <video class="retry-video" width="800" controls>
+                            <source src="static/videos/retry.mp4">
+                        </video>
+                        <p class="p-3 p-system">
+                            Deze video laat mijn API in actie zien met een handmatig geactiveerde rescrape.
+                            Het linker venster heeft een "Test" button waarmee ik de rescrape handmatig activeer, dit zorgt ervar dat de pagina befriest,
+                            maar in deployment gebeurt dit niet omdat het een scheduled task is die in de achtergrond runned.
+                        </p>
+
+                        <p class="p-3 p-system">
+                            Het venster rechtsbovenin is de htop(systeem monitor) van mijn webscraper API server die laat zien dat de API in gebruik is
+                            en daaronder zie je de logs van de rescrape in actie.
+                        </p>
+
+                    </div>
+
+                    <div class="proxy-div">
+                        <h1>userProducts dagelijks rescrapen en alle andere producten wekelijks om kosten te besparen</h1>
+                        <p class="p-3 p-system">
+                            Wat ik moet rescrapen en wanneer was een moeilijke keuze om te maken. Ik wou heel graag verse data, maar ik wou ook niet honderden per maand uitgeven aan proxies, dus een balans vinden was heel belangrijk.
+                        </p>
+
+                        <p class="p-3 p-system">
+                            Omdat webshops hun prijs data niet elke 30 minutes aanpassen, is één keer per dag checken genoeg en de enige data die up to date moet zijn is de data
+                            die gebruikers zien. Dus mijn oplossing is om de data die gebruikers zien op een dagelijkse basis vers te houden en alle andere data op een wekelijkse basis.
+                        </p>
+
+                        <p class="p-3 p-system-green">
+                            Mijn database heeft 2 product tabellen, products en userProducts, zoals de namen al zeggen is products een tabel voor alle producten en userProdcuts een tabel die userID(van de users tabel)
+                            en productID(van de products tabel) verbind.
+                            <br><br>
+                            De products tabel wordt elke week om 03:00 CEST op dinsdag gerescraped om wekelijkse versheid te behouden in de hele database,
+                            en omdat ik voor de toekomst een paar ideeën heb zoals de laagste prijs ooit gezien bijhouden of prijs grafieken voor gebruikers maken.
+                            <br><br>
+                            De userProdcuts tabel wordt elke dag om 03:00 CEST gescraped behalve op dinsdag want dan is de wekelijkse. Dit zorgt ervoor dat de data die gebruikers zien
+                            heel vers is en alle andere data redelijk vers is terwijl ik de kosten op een minimum hou.
+                        </p>
+
+                    </div>
+                    <div class="database-div">
+                        <h1>Database Structuur</h1>
+                        <div class="database-flex">
+                            <div>
+                                <img class="database-img" src="static/images/db.png">
+                            </div>
+                            <div class="retry-img-p-div">
+                                <p class="p-3 p-system-green">
+                                    The database bestaat uit 3 tabellen: <code>users</code>, <code>products</code> en <code>userProducts</code>. <code>userProducts</code> is een junction tabel die gebruikers linkt aan de producten die ze willen volgen doormiddel 
+                                    van de <code>userID</code> en de <code>productID</code>.
+                                </p>
+
+                                <p class="p-3 p-system-green">
+                                    Het design zorgt ervoor dat de database simpel blijft maar ook meerder gebruikers de mogelijkheid geeft om hetzelfde product te volgen,
+                                    dit bespaart opslag ruimte maar ook API gebruik.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="break-border2">
+                    <div class="border-break3">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+        gsap.registerPlugin(ScrollTrigger)
+
+        const background = gsap.timeline()
+
+        background.to("body", {backgroundColor: "#76AB85"})
+            .to("body", {backgroundColor: "#3E6549"})
+            .to("body", {backgroundColor: "#09110C"})
+
+        ScrollTrigger.create({
+            trigger: "#section-wrapper",
+            start: "top top",
+            end: "bottom bottom",
+            scrub: true,
+            animation: background
+        });
+    });
+
+    document.querySelector('.expand-div').addEventListener('click', () => {
+        document.querySelector('.drawer-div').classList.toggle('closed');
+        document.querySelector('.expand-arrow').classList.toggle('closed');
+    });
+
+    document.querySelector('.lanbtn-NL').addEventListener('click', () => {
+        console.log("test")
+        window.location.href="./index.html";
+    });
+
+    document.querySelector('.lanbtn-EN').addEventListener('click', () => {
+        window.location.href="./index-en.html";
+    });
+</script>
