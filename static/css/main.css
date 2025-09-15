@@ -109,7 +109,7 @@ body {
 
 .me-paragraph {
     padding-left: 5vh;
-    font-size: 1.6vh;
+    font-size: clamp(0.9vw, 1rem, 1.1vw);
     margin-bottom: 1.5vh;
 }
 
@@ -125,6 +125,7 @@ body {
     margin-left: 5vh;
     display: grid;
     justify-items: left;
+    max-width: 37vw;
 }
 
 .website-image-div {
@@ -133,7 +134,7 @@ body {
 }
 
 .website-img {
-    width: 75vh;
+    width: clamp(35vw, 45rem, 50vw);
     border-radius: 25px;
     border: solid #3B3B1A 1px;
 }
@@ -183,12 +184,12 @@ body {
 }
 
 .project-paragraph {
-    font-size: 1.5vh;
+    font-size: clamp(0.9vw, 1rem, 1.1vw);
     text-align: left;
 }
 
 .project-paragraph-2 {
-    font-size: 1.5vh;
+    font-size: clamp(0.9vw, 1rem, 1.1vw);
     text-align: center;
 }
 
@@ -199,7 +200,7 @@ body {
     height: 3vh;
     align-items: center;
     text-align: center;
-    font-size: 1.4vh;
+    font-size: clamp(0.9vw, 1rem, 1.1vw);
 }
 
 .demo-button:hover {
@@ -207,7 +208,7 @@ body {
 }
 
 .git-logo {
-    height: 5vh;
+    height: clamp(2vw, 5rem, 3.5vw);
 }
 
 .git-button {
@@ -338,7 +339,7 @@ button:hover {
 }
 
 .p-3 {
-    font-size: 1.5vh;
+    font-size: clamp(0.7vw, 1rem, 1.2vw);
 }
 
 #standardise-1 {
@@ -440,7 +441,7 @@ a {
 }
 
 .flow-text {
-    font-size: 1.5vh;
+    font-size: clamp(0.8vw, 1rem, 1.1vw);
 }
 
 .horizontal-flow {
@@ -472,17 +473,17 @@ a {
 #empty-table-img-1 {
     border: solid black 2px;
     margin-bottom: -1.5vh;
-    height: 13vh;
+    height: clamp(7vw, 9rem, 8vw);
 }
 
 #empty-table-img-2 {
     border: solid black 2px;
     margin-bottom: -1.5vh;
-    height: 43vh;
+    height: clamp(20vw, 26rem, 21vw);
 }
 
 .index-snippet {
-    font-size: 1.5vh;
+    font-size: clamp(0.8vw, 1rem, 1.1vw);
 }
 
 .empty-table-p {
@@ -531,7 +532,7 @@ a {
 
 .fadeout-image {
     border: solid black 2px;
-    height: 23vh;
+    height: clamp(13vw, 13rem, 20vw);
     margin-bottom: -1.5vh;
 }
 
@@ -587,7 +588,7 @@ a {
 .title-scraping {
     align-items: center;
     text-align: center;
-    font-size: 1.5vh;
+    font-size: clamp(0.8vw, 1rem, 1.1vw);
 }
 
 .bol-img1 {
@@ -598,6 +599,7 @@ a {
 
 .bol-img2 {
     border: solid black 2px;
+
     margin-bottom: -1.5vh;
 }
 
@@ -743,10 +745,12 @@ a {
 
 .log-snippet {
     padding-left: 1.5em;
+    font-size: clamp(0.6vw, 0.9rem, 0.7vw);
 }
 
 .retry-video {
-    border: solid black 2px;
+    width: clamp(38vw, 45rem, 40vw);
+    object-fit: cover;
     margin-left: 1.5em;
 }
 
@@ -771,7 +775,7 @@ a {
 
 .database-img {
     border: solid black 2px;
-    height: 32vh;
+    height: clamp(17vw, 20rem, 19vw);
 }
 
 .border-break3 {
