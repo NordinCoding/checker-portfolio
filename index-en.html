@@ -128,41 +128,42 @@
                         I very quickly figured out how complex rescraping a product database can be due to differences in user input but also due to inconsistencies in URLs.<br>
                         To combat this, I standardise all my URLs and remove their inconsistent trailing data before entering them into the database.
                     </p>
-                    <div class="code-block-div" id="standardise-div">
-                        <div>
-                            <img class="code-snippet" src="static/images/standardise_url.png">
+                    <div class="code-block-div-wrapper">
+                        <div class="code-block-div" id="standardise-div">
+                            <div>
+                                <img class="code-snippet" src="static/images/standardise_url.png">
+                            </div>
+                            <div class="drawer-div closed">
+                                <div class="explanation-div">
+                                    <div>
+                                        <p id="standardise-1">
+                                            Clean up URL.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p id="standardise-2">
+                                            Bol.com URLs use a pattern of "/?" before trailing data.<br>
+                                            If it exists, I use the index of "/?" to slice off the trailing data.
+                                        </p>
+                                    </div>
+                                    <div id="standardise-3-div">
+                                        <p id="standardise-3">
+                                            I standardise all URLs so my deduplication logic stays<br> consistent.
+                                            I do this by adding "https://www." if the<br>URL doesn't already include it.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="expand-div">
+                                    <h3>Explanation</h3>
+                                    <div class="expand-arrow-div">
+                                        <img class="expand-arrow" src="static/images/arrow.png">
+                                    </div>
+                                </div>
+                                <div class="expand-div">
+                                    
+                                </div>
+                            </div>
                         </div>
-                        <div class="drawer-div closed">
-                            <div class="explanation-div">
-                                <div>
-                                    <p id="standardise-1">
-                                        Clean up URL.
-                                    </p>
-                                </div>
-                                <div>
-                                    <p id="standardise-2">
-                                        Bol.com URLs use a pattern of "/?" before trailing data.<br>
-                                        If it exists, I use the index of "/?" to slice off the trailing data.
-                                    </p>
-                                </div>
-                                <div id="standardise-3-div">
-                                    <p id="standardise-3">
-                                        I standardise all URLs so my deduplication logic stays<br> consistent.
-                                        I do this by adding "https://www." if the<br>URL doesn't already include it.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="expand-div">
-                                <h3>Explanation</h3>
-                                <div class="expand-arrow-div">
-                                    <img class="expand-arrow" src="static/images/arrow.png">
-                                </div>
-                            </div>
-                            <div class="expand-div">
-                                
-                            </div>
-                        </div>
-                        
                     </div>
                     <h3 class="index-snippet">
                         This snippet is from 

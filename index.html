@@ -131,46 +131,47 @@
             </div>
             <div id="stage-3-div">
                 <div class="code-segment">
-                    <h1>standaardisatie van URLs</h1>
+                    <h1>Standaardisatie van URLs</h1>
                     <p class="p-3" id="standardise-text">
                         Ik kwam er heel snel achter hoe complex het herscrapen van een product database kan zijn vanwege verschillen in gebruikersinput, maar ook<br>
                         inconsistenties in URLs. Om dit tegen te gaan, standardiseer ik alle URLs en verwijder ik de trailing data voordat ze in de database komen.
                     </p>
-                        
-                    <div class="code-block-div" id="standardise-div">
-                        <div>
-                            <img class="code-snippet" src="static/images/standardise_url.png">
-                        </div>
-                        <div class="drawer-div closed">
-                            <div class="explanation-div">
-                                <div>
-                                    <p id="standardise-1">
-                                        URL opschonen.
-                                    </p>
-                                </div>
-                                <div>
-                                    <p id="standardise-2">
-                                        Bol.com URLs hebben een patroon van "/?" voor hun <br>trailing data.
-                                        Als dit patroon bestaat, gebruik ik de index<br>van "/?" om de trailing
-                                        data eraf te slicen.
-                                    </p>
-                                </div>
-                                <div id="standardise-3-div">
-                                    <p id="standardise-3">
-                                        Ik standardiseer al de URLs zodat mijn deduplicatie<br> logica 
-                                        consistent blijft. Ik doe dit door "https://www." <br>toe te voegen
-                                        aan URLs die dit nog niet hebben.
-                                    </p>
-                                </div>
+                    <div class="code-block-div-wrapper">
+                        <div class="code-block-div" id="standardise-div">
+                            <div>
+                                <img class="code-snippet" src="static/images/standardise_url.png">
                             </div>
-                            <div class="expand-div">
-                                <h3>Uitleg</h3>
-                                <div class="expand-arrow-div">
-                                    <img class="expand-arrow" src="static/images/arrow.png">
+                            <div class="drawer-div closed">
+                                <div class="explanation-div">
+                                    <div>
+                                        <p id="standardise-1">
+                                            URL opschonen.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p id="standardise-2">
+                                            Bol.com URLs hebben een patroon van "/?" voor hun <br>trailing data.
+                                            Als dit patroon bestaat, gebruik ik de index<br>van "/?" om de trailing
+                                            data eraf te slicen.
+                                        </p>
+                                    </div>
+                                    <div id="standardise-3-div">
+                                        <p id="standardise-3">
+                                            Ik standardiseer al de URLs zodat mijn deduplicatie<br> logica 
+                                            consistent blijft. Ik doe dit door "https://www." <br>toe te voegen
+                                            aan URLs die dit nog niet hebben.
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="expand-div">
-                                
+                                <div class="expand-div">
+                                    <h3>Uitleg</h3>
+                                    <div class="expand-arrow-div">
+                                        <img class="expand-arrow" src="static/images/arrow.png">
+                                    </div>
+                                </div>
+                                <div class="expand-div">
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
